@@ -7,20 +7,16 @@ const USERS = [
 		active: true
 	},
 	{
-		name: 'Ezequiel Hornus',
-		role: 'teacher',
-		active: false
-	},
-	{
 		name: 'Lalo Hornus',
 		role: 'student',
 		active: true
+	},
+	{
+		name: 'Ezequiel Hornus',
+		role: 'teacher',
+		active: false
 	}
 ];
 
-const App = () => (
-	<UserList users={USERS}>
-		<h1>Listado de usuarios</h1>
-	</UserList>
-);
+const App = () => <UserList users={USERS} />;
 export default App;
