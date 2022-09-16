@@ -1,0 +1,50 @@
+.button {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.button:disabled {
+	cursor: default;
+}
+
+.icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.black {
+	color: var(--color-black);
+}
+.blackFilled {
+	background-color: var(--color-black);
+}
+.redFilled {
+	background-color: var(--color-red);
+}
+.red {
+	color: var(--color-red);
+}
+.black,
+.red {
+	background-color: transparent;
+}
+
+.black:disabled,
+.red:disabled {
+	color: var(--color-lightgray);
+}
+.redFilled,
+.blackFilled {
+	color: white;
+}
+.redFilled:disabled,
+.blackFilled:disabled {
+	background-color: var(--color-lightgray);
+}

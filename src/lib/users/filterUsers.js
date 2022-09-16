@@ -1,5 +1,5 @@
-import { SORT_OPTIONS } from "../../constants/sortOptions";
-import { USER_ROLES } from "../../constants/userRoles";
+import { SORT_OPTIONS } from '../../constants/sortOptions';
+import { USER_ROLES } from '../../constants/userRoles';
 
 export const filterUsersByName = (users, search) => {
 	if (!search) return [...users];
@@ -43,4 +43,10 @@ export const sortUsers = (users, sortBy) => {
 		default:
 			return sortedUsers;
 	}
+};
+export const paginateUsers = (users, page, itemsPerPage) => {
+	const startIndex = (page - 1) * itemsPerPage;
+	const endIndex = startIndex + itemsPerPage;
+
+	return users.slice(startIndex, endIndex);
 };
