@@ -18,6 +18,24 @@ const USERS = [
 		name: 'Ezequiel Hornus',
 		role: 'teacher',
 		active: false
+	},
+	{
+		username: 'germanchah',
+		name: 'Geasdnus',
+		role: 'other',
+		active: true
+	},
+	{
+		username: 'joasde',
+		name: 'Lalo Hornus',
+		role: 'student',
+		active: false
+	},
+	{
+		username: 'edase',
+		name: 'Ezequiel Hornus',
+		role: 'teacher',
+		active: false
 	}
 ];
 
